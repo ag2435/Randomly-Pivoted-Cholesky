@@ -1,0 +1,173 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+Input Notebook:  qm9.ipynb
+Output Notebook: qm9-20k.ipynb
+Executing:   0%|          | 0/13 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   8%|▊         | 1/13 [00:01<00:14,  1.19s/cell]Executing:  23%|██▎       | 3/13 [00:02<00:07,  1.37cell/s]Executing:  38%|███▊      | 5/13 [00:03<00:05,  1.43cell/s]Executing:  62%|██████▏   | 8/13 [00:03<00:01,  2.84cell/s]Executing:  62%|██████▏   | 8/13 [00:19<00:01,  2.84cell/s]Executing:  69%|██████▉   | 9/13 [1:46:24<1:24:59, 1274.86s/cell]Executing:  77%|███████▋  | 10/13 [1:46:25<49:35, 991.98s/cell]  Executing:  92%|█████████▏| 12/13 [1:46:25<10:07, 607.11s/cell]Executing:  92%|█████████▏| 12/13 [1:46:26<08:52, 532.18s/cell]
+Traceback (most recent call last):
+  File "/home/ag2435/.conda/envs/rpcholesky/bin/papermill", line 10, in <module>
+    sys.exit(papermill())
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/cli.py", line 250, in papermill
+    execute_notebook(
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/execute.py", line 128, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/execute.py", line 232, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [11]":
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[11], line 7
+      4     means = [np.mean(krrmse) for krrmse in result[name]["KRRMSE"] ]
+      5     stds = [np.std(krrmse) for krrmse in result[name]["KRRMSE"] ]
+----> 7     fig.add_trace(go.Scatter(x=ks, y=means, mode='lines+markers', name=name, 
+      8                              error_y=stds))
+      9 fig.update_layout(title='MSE vs. Coreset Size',
+     10                      xaxis_title='Coreset Size',
+     11                      yaxis_title='MSE')
+     12 fig.show()
+
+File ~/.conda/envs/rpcholesky/lib/python3.9/site-packages/plotly/graph_objs/_scatter.py:3120, in Scatter.__init__(self, arg, cliponaxis, connectgaps, customdata, customdatasrc, dx, dy, error_x, error_y, fill, fillcolor, fillpattern, groupnorm, hoverinfo, hoverinfosrc, hoverlabel, hoveron, hovertemplate, hovertemplatesrc, hovertext, hovertextsrc, ids, idssrc, legendgroup, legendgrouptitle, legendrank, line, marker, meta, metasrc, mode, name, opacity, orientation, selected, selectedpoints, showlegend, stackgaps, stackgroup, stream, text, textfont, textposition, textpositionsrc, textsrc, texttemplate, texttemplatesrc, uid, uirevision, unselected, visible, x, x0, xaxis, xcalendar, xhoverformat, xperiod, xperiod0, xperiodalignment, xsrc, y, y0, yaxis, ycalendar, yhoverformat, yperiod, yperiod0, yperiodalignment, ysrc, **kwargs)
+   3118 _v = error_y if error_y is not None else _v
+   3119 if _v is not None:
+-> 3120     self["error_y"] = _v
+   3121 _v = arg.pop("fill", None)
+   3122 _v = fill if fill is not None else _v
+
+File ~/.conda/envs/rpcholesky/lib/python3.9/site-packages/plotly/basedatatypes.py:4851, in BasePlotlyType.__setitem__(self, prop, value)
+   4849 # ### Handle compound property ###
+   4850 if isinstance(validator, CompoundValidator):
+-> 4851     self._set_compound_prop(prop, value)
+   4853 # ### Handle compound array property ###
+   4854 elif isinstance(validator, (CompoundArrayValidator, BaseDataValidator)):
+
+File ~/.conda/envs/rpcholesky/lib/python3.9/site-packages/plotly/basedatatypes.py:5262, in BasePlotlyType._set_compound_prop(self, prop, val)
+   5259 # Import value
+   5260 # ------------
+   5261 validator = self._get_validator(prop)
+-> 5262 val = validator.validate_coerce(val, skip_invalid=self._skip_invalid)
+   5264 # Save deep copies of current and new states
+   5265 # ------------------------------------------
+   5266 curr_val = self._compound_props.get(prop, None)
+
+File ~/.conda/envs/rpcholesky/lib/python3.9/site-packages/_plotly_utils/basevalidators.py:2464, in CompoundValidator.validate_coerce(self, v, skip_invalid, _validate)
+   2462         v = self.data_class()
+   2463     else:
+-> 2464         self.raise_invalid_val(v)
+   2466 v._plotly_name = self.plotly_name
+   2467 return v
+
+File ~/.conda/envs/rpcholesky/lib/python3.9/site-packages/_plotly_utils/basevalidators.py:288, in BaseValidator.raise_invalid_val(self, v, inds)
+    285             for i in inds:
+    286                 name += "[" + str(i) + "]"
+--> 288         raise ValueError(
+    289             """
+    290     Invalid value of type {typ} received for the '{name}' property of {pname}
+    291         Received value: {v}
+    292 
+    293 {valid_clr_desc}""".format(
+    294                 name=name,
+    295                 pname=self.parent_name,
+    296                 typ=type_str(v),
+    297                 v=repr(v),
+    298                 valid_clr_desc=self.description(),
+    299             )
+    300         )
+
+ValueError: 
+    Invalid value of type 'builtins.list' received for the 'error_y' property of scatter
+        Received value: [0.0, 0.0, 0.0]
+
+    The 'error_y' property is an instance of ErrorY
+    that may be specified as:
+      - An instance of :class:`plotly.graph_objs.scatter.ErrorY`
+      - A dict of string/value properties that will be passed
+        to the ErrorY constructor
+
+        Supported dict properties:
+            
+            array
+                Sets the data corresponding the length of each
+                error bar. Values are plotted relative to the
+                underlying data.
+            arrayminus
+                Sets the data corresponding the length of each
+                error bar in the bottom (left) direction for
+                vertical (horizontal) bars Values are plotted
+                relative to the underlying data.
+            arrayminussrc
+                Sets the source reference on Chart Studio Cloud
+                for `arrayminus`.
+            arraysrc
+                Sets the source reference on Chart Studio Cloud
+                for `array`.
+            color
+                Sets the stoke color of the error bars.
+            symmetric
+                Determines whether or not the error bars have
+                the same length in both direction (top/bottom
+                for vertical bars, left/right for horizontal
+                bars.
+            thickness
+                Sets the thickness (in px) of the error bars.
+            traceref
+
+            tracerefminus
+
+            type
+                Determines the rule used to generate the error
+                bars. If *constant`, the bar lengths are of a
+                constant value. Set this constant in `value`.
+                If "percent", the bar lengths correspond to a
+                percentage of underlying data. Set this
+                percentage in `value`. If "sqrt", the bar
+                lengths correspond to the square of the
+                underlying data. If "data", the bar lengths are
+                set with data set `array`.
+            value
+                Sets the value of either the percentage (if
+                `type` is set to "percent") or the constant (if
+                `type` is set to "constant") corresponding to
+                the lengths of the error bars.
+            valueminus
+                Sets the value of either the percentage (if
+                `type` is set to "percent") or the constant (if
+                `type` is set to "constant") corresponding to
+                the lengths of the error bars in the bottom
+                (left) direction for vertical (horizontal) bars
+            visible
+                Determines whether or not this set of error
+                bars is visible.
+            width
+                Sets the width (in px) of the cross-bar at both
+                ends of the error bars.
+
+

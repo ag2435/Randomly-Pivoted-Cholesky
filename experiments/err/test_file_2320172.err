@@ -1,0 +1,56 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+Input Notebook:  qm9.ipynb
+Output Notebook: qm9-20k.ipynb
+Executing:   0%|          | 0/13 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   8%|▊         | 1/13 [00:01<00:17,  1.44s/cell]Executing:  23%|██▎       | 3/13 [00:03<00:09,  1.01cell/s]Executing:  38%|███▊      | 5/13 [00:04<00:06,  1.16cell/s]Executing:  54%|█████▍    | 7/13 [00:04<00:03,  1.93cell/s]Executing:  69%|██████▉   | 9/13 [02:26<01:48, 27.12s/cell]Executing:  69%|██████▉   | 9/13 [02:27<01:05, 16.35s/cell]
+Traceback (most recent call last):
+  File "/home/ag2435/.conda/envs/rpcholesky/bin/papermill", line 10, in <module>
+    sys.exit(papermill())
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/cli.py", line 250, in papermill
+    execute_notebook(
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/execute.py", line 128, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/home/ag2435/.conda/envs/rpcholesky/lib/python3.9/site-packages/papermill/execute.py", line 232, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [8]":
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[8], line 75
+     72     print(f'KRR acc: mse {KRRmse[-1]}, mae {KRRmae[-1]}, smape {KRRsmape[-1]}')
+     73     print(f'time: sample {model.sample_time}, linsolve {model.linsolve_time}, pred {model.pred_time}')
+---> 75 result[name]["trace_errors"][idx_k] = trace_err   # [np.mean(trace_err),np.std(trace_err)]
+     76 result[name]["KRRMSE"][idx_k] = KRRmse    # [np.mean(KRRmse),np.std(KRRmse)]
+     77 result[name]["KRRMAE"][idx_k] = KRRmae    #[np.mean(KRRmae),np.std(KRRmae)]
+
+ValueError: could not broadcast input array from shape (100,) into shape (2,)
+

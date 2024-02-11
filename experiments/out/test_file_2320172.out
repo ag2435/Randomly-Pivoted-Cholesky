@@ -1,0 +1,13 @@
+no change     /share/apps/anaconda3/2021.05/condabin/conda
+no change     /share/apps/anaconda3/2021.05/bin/conda
+no change     /share/apps/anaconda3/2021.05/bin/conda-env
+no change     /share/apps/anaconda3/2021.05/bin/activate
+no change     /share/apps/anaconda3/2021.05/bin/deactivate
+no change     /share/apps/anaconda3/2021.05/etc/profile.d/conda.sh
+no change     /share/apps/anaconda3/2021.05/etc/fish/conf.d/conda.fish
+no change     /share/apps/anaconda3/2021.05/shell/condabin/Conda.psm1
+no change     /share/apps/anaconda3/2021.05/shell/condabin/conda-hook.ps1
+no change     /share/apps/anaconda3/2021.05/lib/python3.8/site-packages/xontrib/conda.xsh
+no change     /share/apps/anaconda3/2021.05/etc/profile.d/conda.csh
+no change     /home/ag2435/.bashrc
+No action taken.
