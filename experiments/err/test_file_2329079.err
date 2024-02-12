@@ -1,0 +1,23 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+Input Notebook:  qm9.ipynb
+Output Notebook: qm9-20k.ipynb
+Executing:   0%|          | 0/18 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▌         | 1/18 [00:01<00:18,  1.10s/cell]Executing:  17%|█▋        | 3/18 [00:04<00:25,  1.71s/cell]Executing:  28%|██▊       | 5/18 [00:05<00:11,  1.15cell/s]Executing:  39%|███▉      | 7/18 [00:06<00:08,  1.34cell/s]Executing:  50%|█████     | 9/18 [00:06<00:04,  2.06cell/s]slurmstepd: error: *** JOB 2329079 ON culberg-cpu-01 CANCELLED AT 2024-02-11T17:01:11 ***

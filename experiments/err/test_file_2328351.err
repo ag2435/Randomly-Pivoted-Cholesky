@@ -1,0 +1,25 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+Input Notebook:  qm9.ipynb
+Output Notebook: qm9-20k.ipynb
+Executing:   0%|          | 0/18 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▌         | 1/18 [00:01<00:23,  1.39s/cell]Executing:  17%|█▋        | 3/18 [00:05<00:28,  1.93s/cell]Executing:  28%|██▊       | 5/18 [00:05<00:12,  1.03cell/s]Executing:  39%|███▉      | 7/18 [00:07<00:09,  1.17cell/s]Executing:  50%|█████     | 9/18 [00:07<00:04,  1.80cell/s]/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=1.01711e-16): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+Executing:  72%|███████▏  | 13/18 [43:33<28:10, 338.09s/cell]Executing:  78%|███████▊  | 14/18 [43:33<19:01, 285.34s/cell]Executing:  94%|█████████▍| 17/18 [43:34<02:50, 170.94s/cell]Executing: 100%|██████████| 18/18 [43:36<00:00, 145.38s/cell]

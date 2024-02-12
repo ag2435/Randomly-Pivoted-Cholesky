@@ -1,0 +1,33 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+Input Notebook:  qm9.ipynb
+Output Notebook: qm9-100k.ipynb
+Executing:   0%|          | 0/18 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▌         | 1/18 [00:00<00:15,  1.10cell/s]Executing:  17%|█▋        | 3/18 [00:02<00:14,  1.01cell/s]Executing:  33%|███▎      | 6/18 [00:03<00:04,  2.45cell/s]Executing:  44%|████▍     | 8/18 [00:03<00:04,  2.40cell/s]Executing:  67%|██████▋   | 12/18 [00:04<00:01,  4.63cell/s]Executing:  67%|██████▋   | 12/18 [00:20<00:01,  4.63cell/s]/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=1.63062e-18): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=3.88707e-19): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=3.24371e-19): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=1.54868e-19): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+/home/ag2435/Randomly-Pivoted-Cholesky/experiments/../KRR_Nystrom.py:54: LinAlgWarning: Ill-conditioned matrix (rcond=5.24426e-17): result may not be accurate.
+  self.sol = scipy.linalg.solve(KMn @ KnM + KnM.shape[0]*lamb*KMM + 100*KMM.max()*np.finfo(float).eps*np.identity(sample_num), KMn @ Ytr, assume_a='pos')
+Executing:  72%|███████▏  | 13/18 [5:02:48<3:54:25, 2813.19s/cell]Executing:  78%|███████▊  | 14/18 [5:02:48<2:33:34, 2303.60s/cell]Executing:  94%|█████████▍| 17/18 [5:02:48<21:36, 1296.83s/cell]  Executing: 100%|██████████| 18/18 [5:02:51<00:00, 1009.53s/cell]

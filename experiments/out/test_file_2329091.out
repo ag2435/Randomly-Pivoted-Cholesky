@@ -1,0 +1,83 @@
+no change     /share/apps/anaconda3/2021.05/condabin/conda
+no change     /share/apps/anaconda3/2021.05/bin/conda
+no change     /share/apps/anaconda3/2021.05/bin/conda-env
+no change     /share/apps/anaconda3/2021.05/bin/activate
+no change     /share/apps/anaconda3/2021.05/bin/deactivate
+no change     /share/apps/anaconda3/2021.05/etc/profile.d/conda.sh
+no change     /share/apps/anaconda3/2021.05/etc/fish/conf.d/conda.fish
+no change     /share/apps/anaconda3/2021.05/shell/condabin/Conda.psm1
+no change     /share/apps/anaconda3/2021.05/shell/condabin/conda-hook.ps1
+no change     /share/apps/anaconda3/2021.05/lib/python3.8/site-packages/xontrib/conda.xsh
+no change     /share/apps/anaconda3/2021.05/etc/profile.d/conda.csh
+no change     /home/ag2435/.bashrc
+No action taken.
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
+`eigenpro2` is not installed...
+Using `torch.linalg.solve` for training the kernel model
+
+WARNING: `torch.linalg.solve` scales poorly with the size of training dataset,
+          and may cause an `Out-of-Memory` error
+`eigenpro2` is a more scalable solver. To use, pass `method="eigenpro"` to `model.fit()`
+To install `eigenpro2` visit https://github.com/EigenPro/EigenPro-pytorch/tree/pytorch/
